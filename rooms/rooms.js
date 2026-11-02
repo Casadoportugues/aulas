@@ -1,0 +1,1 @@
+(function(){var L=window.CDP_LINKS||{};document.querySelectorAll('a.level[data-link]').forEach(function(a){var u=L[a.getAttribute('data-link')];if(u){a.href=u;a.target='_blank';a.rel='noopener';a.removeAttribute('aria-disabled');}else{a.addEventListener('click',function(e){e.preventDefault();});}});})();
