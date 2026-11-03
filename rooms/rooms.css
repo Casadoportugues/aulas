@@ -44,3 +44,10 @@ footer{margin-top:60px;padding:24px 0;border-top:1px solid #eee;font-size:14px;c
 footer .wrap{display:flex;flex-wrap:wrap;gap:6px 24px}
 @media(max-width:820px){.cards.n9,.cards.n6{grid-template-columns:repeat(2,1fr)}.levels{grid-template-columns:repeat(2,1fr)}.theme-head{flex-direction:column-reverse;align-items:flex-start}.theme-head img{width:140px;height:140px}}
 @media(max-width:520px){.cards.n9,.cards.n6,.cards.n4{grid-template-columns:1fr}.levels{grid-template-columns:1fr 1fr}.brand img{height:44px}}
+/* Room figures peeking over the level buttons */
+.levels{position:relative}
+.levels .level{position:relative;z-index:1}
+.peek{position:absolute;right:12px;bottom:calc(100% - 16px);z-index:0;height:auto;display:block;pointer-events:none;user-select:none}
+@media(max-width:820px){.theme-sec .lead{padding-right:150px}}
+@media(max-width:520px){.theme-sec .lead{padding-right:105px}.peek{transform:scale(.8);transform-origin:bottom right}}
+@media(max-width:520px){.peek[data-r="joaquim"]{transform:scale(.64)}}
